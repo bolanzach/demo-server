@@ -6,3 +6,6 @@
 - `npm install --save-dev eslint-config-prettier eslint-plugin-prettier`
   > The former turns off all ESLint rules that could conflict with Prettier, the latter integrates the Prettier rules into ESLint rules.
 - Remove any extra formatters in Settings. Use the ones in .vscode/settings.json
+- `npm install apollo-server graphql webpack-node-externals`.
+- Update webpack with webpack-node-externals and set `target: "node"`. Otherwise the build fails
+-

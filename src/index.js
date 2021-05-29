@@ -1,5 +1,8 @@
+import { ApolloServer } from 'apollo-server';
 import { myFunction } from './package';
 import SomeClass from './someClass';
+import resolvers from './gql/resolvers';
+import typeDefs from './gql/typeDefs';
 
 (function () {
   const message = myFunction() ?? '';
@@ -12,4 +15,10 @@ import SomeClass from './someClass';
 
   console.log(obj2);
   console.log(me.sayHello());
+
+  const server = new ApolloServer({ typeDefs, resolvers });
+
+  server.listen().then(({ url }) => {
+    console.log(`🚀  Server ready at ${url}`);
+  });
 })();

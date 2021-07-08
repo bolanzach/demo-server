@@ -8,4 +8,5 @@
 - Remove any extra formatters in Settings. Use the ones in .vscode/settings.json
 - `npm install apollo-server graphql webpack-node-externals`.
 - Update webpack with webpack-node-externals and set `target: "node"`. Otherwise the build fails
--
+
+- Run with docker: `docker run -p 49160:4000 -d <containerId>`

@@ -18,7 +18,8 @@
   "homepage": "https://github.com/bolanzach/demo-server#readme",
   "dependencies": {
     "apollo-server": "^2.25.0",
-    "graphql": "^15.5.0"
+    "graphql": "^15.5.0",
+    "mongodb": "^3.6.9"
   },
   "devDependencies": {
     "eslint": "^7.27.0",
